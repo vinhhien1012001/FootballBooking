@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.hero-container {
+    background: url('./assets/img/hero.png') center center/cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    object-fit: contain;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .hero-content{
+    pad
+} */
+
+.hero-text{
+    width: fit-content;
+    /* color: white; */
+    /* margin-left: 30px; */
+}
+
+.booking_banner-container {
+    background: url('./assets/img/hero.png') center center/cover;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.booking_banner-content {
+    width: fit-content;
+    text-align: center;
+}
+
+.react-datepicker__day {
+    margin: 10px;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(5px);
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" type="image/png" sizes="16x16" href="/plugins/images/favicon.png">
+        <title>Cubic Admin Template</title>
+        <!-- ===== Bootstrap CSS ===== -->
+        <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- ===== Plugin CSS ===== -->
+        <link href="/plugins/components/morrisjs/morris.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet"
+            type="text/css" />
+        <!-- ===== Animation CSS ===== -->
+        <link href="/css/animate.css" rel="stylesheet">
+        <!-- ===== Custom CSS ===== -->
+        <link href="/css/style.css" rel="stylesheet">
+        <!-- ===== Color CSS ===== -->
+        <link href="/css/colors/green-dark.css" id="theme" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body class="mini-sidebar">
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="cssload-speeding-wheel"></div>
+        </div>
+        <div id="wrapper">
+            <!-- ===== Top-Navigation ===== -->
+            <nav class="navbar navbar-default navbar-static-top m-b-0">
+                <div class="navbar-header">
+                    <a class="navbar-toggle font-20 hidden-sm hidden-md hidden-lg " href="javascript:void(0)"
+                        data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="top-left-part">
+                        <a class="logo" href="/dashboard">
+                            <b>
+                                <img src="/plugins/images/logo.png" alt="home" />
+                            </b>
+                            <span>
+                                <img src="/plugins/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+            <!-- ===== Top-Navigation-End ===== -->
+            <!-- ===== Left-Sidebar ===== -->
+            <aside class="sidebar" role="navigation">
+                <div class="scroll-sidebar">
+                    <div class="user-profile">
+                        <div class="dropdown user-pro-body">
+                            <div class="profile-image">
+                                <img src="/plugins/images/users/hanna.jpg" alt="user-img" class="img-circle">
+                                <a href="javascript:void(0);" class="dropdown-toggle u-dropdown text-blue"
+                                    data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="badge badge-danger">
+                                        <i class="fa fa-angle-down"></i>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu animated flipInY">
+                                    <li><a href="javascript:void(0);"><i class="fa fa-user"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0);"><i class="fa fa-inbox"></i> Inbox</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="javascript:void(0);"><i class="fa fa-cog"></i> Account Settings</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href=""><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                            <p class="profile-text m-t-15 font-16"><a href="javascript:void(0);"> Hanna Gover</a></p>
+                        </div>
+                    </div>
+                    <nav class="sidebar-nav">
+                        <ul id="side-menu">
+                            <li>
+                                <a class="waves-effect" href="/dashboard" aria-expanded="false"><i
+                                        class="icon-screen-desktop fa-fw"></i> <span class="hide-menu"> Dashboard <span
+                                            class="label label-rounded label-info pull-right">3</span></span></a>
+                            </li>
+                            <li>
+                                <a class="active waves-effect" href="javascript:void(0);" aria-expanded="false"><i
+                                        class="icon-basket fa-fw"></i> <span class="hide-menu"> Stadium </span></a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li> <a href="/stadium/add">Add Stadium</a> </li>
+                                    <li> <a href="/stadium">List Stadium</a> </li>
+                                    <li> <a href="/stadium/pitches/add">Add Pitch</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="waves-effect" href="javascript:void(0);" aria-expanded="false"><i
+                                        class="icon-envelope-letter fa-fw"></i> <span class="hide-menu"> Ticket <span
+                                            class="label label-rounded label-primary pull-right">5</span></span></a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li> <a href="/ticket/show-ticket">List ticket</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </aside>
+            <!-- ===== Left-Sidebar-End ===== -->
+            <!-- Page Content -->
+            <div class="page-wrapper">
+                {{{body}}}
+                <!-- /.container-fluid -->
+                {{>footer}}
+
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="/plugins/components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Menu Plugin JavaScript -->
+        <script src="/js/sidebarmenu.js"></script>
+        <!--slimscroll JavaScript -->
+        <script src="/js/jquery.slimscroll.js"></script>
+        <!--Wave Effects -->
+        <script src="/js/waves.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="/js/custom.js"></script>
+        <script src="/plugins/components/datatables/jquery.dataTables.min.js"></script>
+        <!-- start - This is for export functionality only -->
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+        <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+        <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+        <!-- end - This is for export functionality only -->
+        <script>
+            $(function () {
+                $('#myTable').DataTable();
+
+                var table = $('#example').DataTable({
+                    "columnDefs": [{
+                        "visible": false,
+                        "targets": 2
+                    }],
+                    "order": [
+                        [2, 'asc']
+                    ],
+                    "displayLength": 25,
+                    "drawCallback": function (settings) {
+                        var api = this.api();
+                        var rows = api.rows({
+                            page: 'current'
+                        }).nodes();
+                        var last = null;
+                        api.column(2, {
+                            page: 'current'
+                        }).data().each(function (group, i) {
+                            if (last !== group) {
+                                $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                                last = group;
+                            }
+                        });
+                    }
+                });
+                // Order by the grouping
+                $('#example tbody').on('click', 'tr.group', function () {
+                    var currentOrder = table.order()[0];
+                    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                        table.order([2, 'desc']).draw();
+                    } else {
+                        table.order([2, 'asc']).draw();
+                    }
+                });
+            });
+        </script>
+        <!--Style Switcher -->
+        <script src="/plugins/components/styleswitcher/jQuery.style.switcher.js"></script>
+        <!--Morris JavaScript -->
+        <script src="/plugins/components/raphael/raphael-min.js"></script>
+        <script src="/plugins/components/morrisjs/morris.js"></script>
+
+
+        <!-- jQuery peity -->
+        <script src="/plugins/components/peity/jquery.peity.min.js"></script>
+        <script src="/plugins/components/peity/jquery.peity.init.js"></script>
+
+
+    </body>
+
+</html>

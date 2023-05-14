@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "server": "cd server && npm start",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-lock": "^1.4.0",
+    "concurrently": "^8.0.1",
+    "helmet": "^6.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "react-spinners": "^0.13.8",
+    "xlsx": "^0.18.5"
+  }
+}
